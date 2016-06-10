@@ -114,7 +114,5 @@ def Drawline(data_set):
 
 if __name__ == '__main__':
 	Spider()
-	#print costs
 	data_set = Analysis()
-	print data_set[0]
 	Drawline(data_set)
