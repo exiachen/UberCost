@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#!coding:utf-8
+
 import requests
 import sys
 from pyquery import PyQuery as pq
@@ -34,6 +37,7 @@ def Parser(reply):
 
 		cost = childtd[3].text_content().strip(u'\xa0')
 		if cost == CANCEL_STRING or cost == '':
+			print "cost: ", cost
 			continue
 		else:
 			cost = float(cost[1:])
